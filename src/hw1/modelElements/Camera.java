@@ -1,6 +1,6 @@
 package hw1.modelElements;
 
-public class Flash {
+public class Camera {
 
     //TODO: Доработать в рамках ДР
 
