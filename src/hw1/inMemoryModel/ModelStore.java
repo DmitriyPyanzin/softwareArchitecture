@@ -30,11 +30,11 @@ public class ModelStore implements ModelChanger {
 
     @Override
     public void RegisterModelChanger(ModelChangesObserver o) {
-
+        observers.add(o);
     }
 
     @Override
     public void RemoveModelChanger(ModelChangesObserver o) {
-
+        observers.remove(o);
     }
 }
