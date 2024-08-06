@@ -1,6 +1,6 @@
 package hw1.inMemoryModel;
 
-public class Obserwer2 implements ModelChangesObserver{
+public class Observer2 implements ModelChangesObserver{
 
     @Override
     public void applyUpdateModel() {
