@@ -4,7 +4,7 @@ import java.util.List;
 
 public class PoligonalModel {
 
-    private List<Poligon> poligons;
+    private final List<Poligon> poligons;
     private List<Texture> textures;
 
     public List<Poligon> getPoligons() {
