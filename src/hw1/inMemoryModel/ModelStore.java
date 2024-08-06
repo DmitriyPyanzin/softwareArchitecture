@@ -23,6 +23,18 @@ public class ModelStore implements ModelChanger {
 
     @Override
     public void notifyChange() {
+        for (ModelChangesObserver observer : observers) {
+            observer.applyUpdateModel();
+        }
+    }
+
+    @Override
+    public void RegisterModelChanger(ModelChangesObserver o) {
+
+    }
+
+    @Override
+    public void RemoveModelChanger(ModelChangesObserver o) {
 
     }
 }
