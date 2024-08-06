@@ -14,5 +14,15 @@ public class ModelStore implements ModelChanger {
     private final List<Flash> flashes = new ArrayList<>();
     private final List<Scene> scenes = new ArrayList<>();
     private final List<Camera> cameras = new ArrayList<>();
+    private final List<ModelChangesObserver> observers = new ArrayList<>();
 
+    public void add(PoligonalModel model) {
+        models.add(model);
+        notifyChange();
+    }
+
+    @Override
+    public void notifyChange() {
+
+    }
 }
