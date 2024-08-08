@@ -16,5 +16,4 @@ public interface IModelChanger {
      * Удаление модели
      */
     void RemoveModelChanger(IModelChangesObserver o);
-
 }
