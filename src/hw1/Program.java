@@ -14,14 +14,15 @@ public class Program {
     public static void main(String[] args){
 
         Observer1 observer1 = new Observer1();
+        Observer2 observer2 = new Observer2();
 
         ModelStore store = new ModelStore();
         store.RegisterModelChanger(observer1);
+        store.RegisterModelChanger(observer2);
         Poligon p1 = new Poligon();
         List<Poligon> poligons = new ArrayList<>();
         poligons.add(p1);
         PoligonalModel poligonalModel = new PoligonalModel(poligons);
         store.add(poligonalModel);
-
     }
 }

@@ -1,5 +1,8 @@
 package hw1.modelElements;
 
+/**
+ * Текстуры для полигональной модели
+ */
 public class Texture {
 
     private int id;

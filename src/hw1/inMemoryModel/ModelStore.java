@@ -4,16 +4,22 @@ import hw1.modelElements.Camera;
 import hw1.modelElements.Flash;
 import hw1.modelElements.PoligonalModel;
 import hw1.modelElements.Scene;
-
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Хранилище моделей элементов
+ */
 public class ModelStore implements ModelChanger {
 
     private final List<PoligonalModel> models = new ArrayList<>();
     private final List<Flash> flashes = new ArrayList<>();
     private final List<Scene> scenes = new ArrayList<>();
     private final List<Camera> cameras = new ArrayList<>();
+
+    /**
+     * Список наблюдателей
+     */
     private final List<ModelChangesObserver> observers = new ArrayList<>();
 
     public void add(PoligonalModel model) {
@@ -31,10 +37,12 @@ public class ModelStore implements ModelChanger {
     @Override
     public void RegisterModelChanger(ModelChangesObserver o) {
         observers.add(o);
+
     }
 
     @Override
     public void RemoveModelChanger(ModelChangesObserver o) {
         observers.remove(o);
+
     }
 }

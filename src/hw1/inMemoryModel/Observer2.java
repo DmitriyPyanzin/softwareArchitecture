@@ -1,5 +1,8 @@
 package hw1.inMemoryModel;
 
+/**
+ * Второй наблюдатель
+ */
 public class Observer2 implements ModelChangesObserver{
 
     @Override

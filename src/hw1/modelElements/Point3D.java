@@ -1,5 +1,8 @@
 package hw1.modelElements;
 
+/**
+ * Точка в пространстве
+ */
 public class Point3D {
 
     private double x, y, z;
