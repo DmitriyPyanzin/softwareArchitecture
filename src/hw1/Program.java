@@ -1,12 +1,11 @@
 package hw1;
 
 import hw1.inMemoryModel.ModelStore;
-import hw1.inMemoryModel.Observer1;
-import hw1.inMemoryModel.Observer2;
+import hw1.test.Observer1;
+import hw1.test.Observer2;
 import hw1.modelElements.poligonalModel.Poligon;
 import hw1.modelElements.poligonalModel.PoligonalModel;
 import hw1.modelElements.poligonalModel.Texture;
-
 import java.util.ArrayList;
 import java.util.List;
 

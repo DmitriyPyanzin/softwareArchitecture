@@ -1,9 +1,11 @@
-package hw1.inMemoryModel;
+package hw1.test;
+
+import hw1.inMemoryModel.IModelChangesObserver;
 
 /**
  * Первый наблюдатель
  */
-public class Observer1 implements ModelChangesObserver{
+public class Observer1 implements IModelChangesObserver {
 
     @Override
     public void applyUpdateModel() {

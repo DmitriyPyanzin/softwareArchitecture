@@ -1,6 +1,6 @@
 package hw1.inMemoryModel;
 
-public interface ModelChanger {
+public interface IModelChanger {
 
     /**
      * Отслеживание событий
@@ -10,11 +10,11 @@ public interface ModelChanger {
     /**
      * Добавление новой модели
      */
-    void RegisterModelChanger(ModelChangesObserver o);
+    void RegisterModelChanger(IModelChangesObserver o);
 
     /**
      * Удаление модели
      */
-    void RemoveModelChanger(ModelChangesObserver o);
+    void RemoveModelChanger(IModelChangesObserver o);
 
 }

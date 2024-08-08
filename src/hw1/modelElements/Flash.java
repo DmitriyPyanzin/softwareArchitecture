@@ -1,7 +1,8 @@
 package hw1.modelElements;
 
+import hw1.modelElements.elements.Angle3D;
+import hw1.modelElements.elements.Color;
 import hw1.modelElements.elements.Point3D;
-
 import java.util.List;
 
 /**
@@ -9,5 +10,10 @@ import java.util.List;
  */
 public class Flash {
 
-    private Flash(List<Point3D> location) {}
+    private List<Point3D> location;
+    private List<Angle3D> angle;
+    private List<Color> color;
+    private float power;
+
+
 }

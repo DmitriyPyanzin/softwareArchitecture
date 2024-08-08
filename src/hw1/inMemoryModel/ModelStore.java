@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Хранилище моделей элементов
  */
-public class ModelStore implements ModelChanger {
+public class ModelStore implements IModelChanger {
 
     private final List<PoligonalModel> models = new ArrayList<>();
     private final List<Scene> scenes = new ArrayList<>();
@@ -20,7 +20,7 @@ public class ModelStore implements ModelChanger {
     /**
      * Список наблюдателей
      */
-    private final List<ModelChangesObserver> observers = new ArrayList<>();
+    private final List<IModelChangesObserver> observers = new ArrayList<>();
 
     public void add(PoligonalModel model) {
         models.add(model);
@@ -29,20 +29,14 @@ public class ModelStore implements ModelChanger {
 
     @Override
     public void notifyChange() {
-        for (ModelChangesObserver observer : observers) {
+        for (IModelChangesObserver observer : observers) {
             observer.applyUpdateModel();
         }
     }
 
     @Override
-    public void RegisterModelChanger(ModelChangesObserver o) {
-        observers.add(o);
-
-    }
+    public void RegisterModelChanger(IModelChangesObserver o) {observers.add(o);}
 
     @Override
-    public void RemoveModelChanger(ModelChangesObserver o) {
-        observers.remove(o);
-
-    }
+    public void RemoveModelChanger(IModelChangesObserver o) {observers.remove(o);}
 }
