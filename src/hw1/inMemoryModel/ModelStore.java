@@ -22,13 +22,13 @@ public class ModelStore implements IModelChanger {
      */
     private final List<IModelChangesObserver> observers = new ArrayList<>();
 
-    public void add(PoligonalModel model) {
-        models.add(model);
+    public void add(Scene scene) {
+        scenes.add(scene);
         notifyChange();
     }
 
-    public void remove(PoligonalModel model) {
-        models.remove(model);
+    public void remove(Scene scene) {
+        scenes.remove(scene);
         notifyChange();
     }
 
@@ -41,4 +41,11 @@ public class ModelStore implements IModelChanger {
 
     @Override
     public void modelChanger(IModelChangesObserver o) {observers.add(o);}
+
+    public void getScene(int id) {
+        for (Scene scene : scenes) {
+            System.out.println(); scenes.get(id);
+        }
+
+    }
 }

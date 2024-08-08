@@ -1,6 +1,7 @@
 package hw1;
 
 import hw1.inMemoryModel.ModelStore;
+import hw1.modelElements.Scene;
 import hw1.test.Observer;
 import hw1.modelElements.poligonalModel.Poligon;
 import hw1.modelElements.poligonalModel.PoligonalModel;
@@ -25,10 +26,13 @@ public class Program {
         List<Texture> textures = new ArrayList<>();
         textures.add(t1);
 
-        PoligonalModel poligonalModel1 = new PoligonalModel(poligons, textures);
-        PoligonalModel poligonalModel2 = new PoligonalModel(poligons);
-        store.add(poligonalModel1);
-        store.add(poligonalModel2);
-        store.remove(poligonalModel2);
+        PoligonalModel poligonalModel = new PoligonalModel(poligons, textures);
+        List<PoligonalModel> pm = new ArrayList<>();
+        pm.add(poligonalModel);
+
+        Scene scene = new Scene(pm);
+        store.add(scene);
+
+        store.getScene(0);
     }
 }
