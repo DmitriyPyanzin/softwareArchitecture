@@ -1,10 +1,13 @@
 package hw1.modelElements;
 
+import hw1.modelElements.elements.Point3D;
+
+import java.util.List;
+
 /**
  * Свет для сцены
  */
 public class Flash {
 
-    //TODO: Доработать в рамках ДР
-
+    private Flash(List<Point3D> location) {}
 }

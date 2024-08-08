@@ -3,8 +3,9 @@ package hw1;
 import hw1.inMemoryModel.ModelStore;
 import hw1.inMemoryModel.Observer1;
 import hw1.inMemoryModel.Observer2;
-import hw1.modelElements.Poligon;
-import hw1.modelElements.PoligonalModel;
+import hw1.modelElements.poligonalModel.Poligon;
+import hw1.modelElements.poligonalModel.PoligonalModel;
+import hw1.modelElements.poligonalModel.Texture;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +20,17 @@ public class Program {
         ModelStore store = new ModelStore();
         store.RegisterModelChanger(observer1);
         store.RegisterModelChanger(observer2);
+
         Poligon p1 = new Poligon();
         List<Poligon> poligons = new ArrayList<>();
         poligons.add(p1);
-        PoligonalModel poligonalModel = new PoligonalModel(poligons);
-        store.add(poligonalModel);
+        Texture t1 = new Texture("Texture");
+        List<Texture> textures = new ArrayList<>();
+        textures.add(t1);
+
+        PoligonalModel poligonalModel1 = new PoligonalModel(poligons, textures);
+        PoligonalModel poligonalModel2 = new PoligonalModel(poligons);
+        store.add(poligonalModel1);
+        store.add(poligonalModel2);
     }
 }

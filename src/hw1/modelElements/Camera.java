@@ -1,10 +1,14 @@
 package hw1.modelElements;
 
+import hw1.modelElements.elements.Point3D;
+
+import java.util.List;
+
 /**
  * Камера для сцены
  */
 public class Camera {
 
-    //TODO: Доработать в рамках ДР
+    private Camera(List<Point3D> location) {}
 
 }
