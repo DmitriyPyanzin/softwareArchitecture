@@ -1,8 +1,7 @@
 package hw1;
 
 import hw1.inMemoryModel.ModelStore;
-import hw1.test.Observer1;
-import hw1.test.Observer2;
+import hw1.test.Observer;
 import hw1.modelElements.poligonalModel.Poligon;
 import hw1.modelElements.poligonalModel.PoligonalModel;
 import hw1.modelElements.poligonalModel.Texture;
@@ -13,12 +12,11 @@ public class Program {
 
     public static void main(String[] args){
 
-        Observer1 observer1 = new Observer1();
-        Observer2 observer2 = new Observer2();
+        Observer observer1 = new Observer();
 
         ModelStore store = new ModelStore();
-        store.RegisterModelChanger(observer1);
-        store.RegisterModelChanger(observer2);
+        store.modelChanger(observer1);
+
 
         Poligon p1 = new Poligon();
         List<Poligon> poligons = new ArrayList<>();
@@ -31,5 +29,6 @@ public class Program {
         PoligonalModel poligonalModel2 = new PoligonalModel(poligons);
         store.add(poligonalModel1);
         store.add(poligonalModel2);
+        store.remove(poligonalModel2);
     }
 }

@@ -27,6 +27,11 @@ public class ModelStore implements IModelChanger {
         notifyChange();
     }
 
+    public void remove(PoligonalModel model) {
+        models.remove(model);
+        notifyChange();
+    }
+
     @Override
     public void notifyChange() {
         for (IModelChangesObserver observer : observers) {
@@ -35,8 +40,5 @@ public class ModelStore implements IModelChanger {
     }
 
     @Override
-    public void RegisterModelChanger(IModelChangesObserver o) {observers.add(o);}
-
-    @Override
-    public void RemoveModelChanger(IModelChangesObserver o) {observers.remove(o);}
+    public void modelChanger(IModelChangesObserver o) {observers.add(o);}
 }

@@ -5,11 +5,10 @@ import hw1.inMemoryModel.IModelChangesObserver;
 /**
  * Первый наблюдатель
  */
-public class Observer1 implements IModelChangesObserver {
+public class Observer implements IModelChangesObserver {
 
     @Override
     public void applyUpdateModel() {
-        System.out.println("Добавлена новая полигональная модель - observer#1");
-
+        System.out.println("Изменена полигональная модель - observer#1");
     }
 }
