@@ -11,6 +11,6 @@ public class User2 extends User {
 
     @Override
     public void notify(Message message) {
-        System.out.println("User2 gets message: " + message.getMessage());
+        System.out.println("User2 gets message: " + message.message());
     }
 }

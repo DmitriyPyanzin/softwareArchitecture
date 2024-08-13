@@ -1,14 +1,5 @@
 package hw2;
 
-public class Message {
+public record Message(String message) {
 
-    private final String message;
-
-    public Message(String message) {
-        this.message = message;
-    }
-
-    public String getMessage() {
-        return message;
-    }
 }
