@@ -1,4 +1,4 @@
-package hw3.lesson3;
+package hw3;
 
 public enum GearboxType {
 
