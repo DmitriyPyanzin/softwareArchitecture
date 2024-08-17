@@ -2,7 +2,7 @@ package hw3;
 
 import java.awt.*;
 
-public class SportCar extends Car {
+public class SportCar extends Car{
 
     public SportCar(String make, String model, Color color) {
         super(make, model, color);
@@ -10,14 +10,10 @@ public class SportCar extends Car {
     }
 
     @Override
-    public void movement() {
-
-    }
+    public void movement() {}
 
     @Override
-    public void maintenance() {
-
-    }
+    public void maintenance() {}
 
     @Override
     public boolean gearShifting() {

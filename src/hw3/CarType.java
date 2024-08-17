@@ -6,4 +6,5 @@ public enum CarType {
     Hatchback,
     Pickup,
     Sport,
+
 }

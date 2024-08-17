@@ -37,10 +37,14 @@ public class Program {
         Harvester harvester = new Harvester("Камаз", "К100", Color.BLACK);
 
         RefuelingStation refuelingStation = new RefuelingStation();
-
         harvester.setRefueling(refuelingStation);
 
         harvester.fuel();
+
+        WipingStation wipingStation = new WipingStation();
+        harvester.setWipingWippin(wipingStation);
+
+        harvester.wiping();
 
     }
 

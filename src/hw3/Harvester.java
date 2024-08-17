@@ -5,60 +5,37 @@ import java.awt.*;
 public class Harvester extends Car implements Fueling, Wiping{
 
     private Refueling refueling;
+    private WipingWippin wipingWippin;
 
     public Harvester(String make, String model, Color color) {
         super(make, model, color);
         setWheelsCount(6);
     }
 
-    public RefuelingStation getRefueling() {return (RefuelingStation) refueling;}
-
     public void setRefueling(RefuelingStation refuelingStation) {this.refueling = refuelingStation;}
 
     @Override
     public void fuel() {if (refueling != null){refueling.fuel(fuelType);}}
 
-    @Override
-    public void movement() {
-
-    }
+    public void setWipingWippin(WipingStation wipingStation) {this.wipingWippin = wipingStation;}
 
     @Override
-    public void maintenance() {
-
-    }
+    public void wiping() {if (wipingWippin != null){wipingWippin.wiping(wipingType);}}
 
     @Override
-    public boolean gearShifting() {
-        return false;
-    }
+    public void movement() {}
 
     @Override
-    public boolean switchHeadLights() {
-        return false;
-    }
+    public void maintenance() {}
 
     @Override
-    public boolean switchWipers() {
-        return false;
-    }
-
-    public void sweeping() {
-        System.out.println("Автомобиль метёт улицу");;
-    }
+    public boolean gearShifting() {return false;}
 
     @Override
-    public void wipMirrors() {
-
-    }
+    public boolean switchHeadLights() {return false;}
 
     @Override
-    public void wipWindshield() {
+    public boolean switchWipers() {return false;}
 
-    }
-
-    @Override
-    public void wipHeadlights() {
-
-    }
+    public void sweeping() {System.out.println("Автомобиль метёт улицу");}
 }

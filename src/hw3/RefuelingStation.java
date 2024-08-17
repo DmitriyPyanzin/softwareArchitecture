@@ -8,6 +8,5 @@ public class RefuelingStation  implements Refueling {
             case Diesel -> System.out.println("Запрпвка дизельным топливом");
             case GasoLine -> System.out.println("Заправка бензином");
         }
-
     }
 }

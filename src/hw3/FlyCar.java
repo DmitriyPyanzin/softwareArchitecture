@@ -17,9 +17,7 @@ public class FlyCar extends Car{
     }
 
     @Override
-    public void maintenance() {
-
-    }
+    public void maintenance() {}
 
     @Override
     public boolean gearShifting() {

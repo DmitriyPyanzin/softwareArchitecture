@@ -75,6 +75,8 @@ public abstract class Car {
 
     private boolean fogLights = false;
 
+    protected WipingType wipingType;
+
     //endregion
 
 }

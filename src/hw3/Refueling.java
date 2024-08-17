@@ -1,6 +1,6 @@
 package hw3;
 
-interface Refueling {
+public interface Refueling {
 
     void fuel(FuelType fuelType);
 
