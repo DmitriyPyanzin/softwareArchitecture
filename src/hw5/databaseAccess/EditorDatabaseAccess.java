@@ -13,6 +13,7 @@ import java.util.Collection;
 public class EditorDatabaseAccess implements DatabaseAccess {
 
     private final Database editorDatabase;
+    protected Collection<Entity> entities;
 
     public EditorDatabaseAccess(Database editorDatabase) {this.editorDatabase = editorDatabase;}
 
@@ -23,6 +24,17 @@ public class EditorDatabaseAccess implements DatabaseAccess {
             if (entity instanceof Model3D) models.add((Model3D) entity);
         }
         return models;
+    }
+
+    @Override
+    public Collection<Texture> removeAllTextures() {
+        editorDatabase.entities;
+        return null;
+    }
+
+    @Override
+    public Collection<Model3D> removeAllModels() {
+        return null;
     }
 
     @Override
