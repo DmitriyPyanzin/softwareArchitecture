@@ -1,5 +1,9 @@
 package hw5;
 
+import hw5.entities.Entity;
+import hw5.entities.Model3D;
+import hw5.entities.Texture;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
@@ -43,4 +47,10 @@ class EditorDatabase implements Database{
         }
         return entities;
     }
+
+    @Override
+    public void delete() {}
+
+    @Override
+    public void deleteAll() {}
 }

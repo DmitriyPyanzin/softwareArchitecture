@@ -1,5 +1,9 @@
 package hw5;
 
+import hw5.entities.Entity;
+import hw5.entities.Model3D;
+import hw5.entities.Texture;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -35,5 +39,4 @@ class EditorDatabaseAccess implements DatabaseAccess {
 
     @Override
     public void removeEntity(Entity entity) {editorDatabase.getAll().remove(entity);}
-
 }

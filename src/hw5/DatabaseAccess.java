@@ -1,5 +1,9 @@
 package hw5;
 
+import hw5.entities.Entity;
+import hw5.entities.Model3D;
+import hw5.entities.Texture;
+
 import java.util.Collection;
 
 /**
@@ -11,5 +15,4 @@ interface DatabaseAccess {
     void removeEntity(Entity entity);
     Collection<Texture> getAllTextures();
     Collection<Model3D> getAllModels();
-
 }

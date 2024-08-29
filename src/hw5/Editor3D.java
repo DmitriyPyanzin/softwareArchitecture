@@ -1,5 +1,8 @@
 package hw5;
 
+import hw5.entities.Model3D;
+import hw5.entities.Texture;
+
 import java.util.ArrayList;
 
 /**
@@ -104,5 +107,4 @@ class Editor3D implements UILayer{
         long endTime = System.currentTimeMillis() - startTime;
         System.out.printf("Операция выполнена за %d мс.\n", endTime);
     }
-
 }

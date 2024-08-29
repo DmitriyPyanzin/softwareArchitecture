@@ -30,6 +30,8 @@ class Program {
             System.out.println("5. Отобразить все текстуры проекта");
             System.out.println("6. Выполнить рендер всех проектов");
             System.out.println("7. Выполнить рендер модели");
+            System.out.println("8. Удалить модель проекта");
+            System.out.println("9. Удалить все модели проекта");
             System.out.println("0. ЗАВЕРШЕНИЕ РАБОТЫ ПРИЛОЖЕНИЯ");
             System.out.print("Пожалуйста, выберете пункт меню: ");
 

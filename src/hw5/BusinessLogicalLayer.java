@@ -1,5 +1,8 @@
 package hw5;
 
+import hw5.entities.Model3D;
+import hw5.entities.Texture;
+
 import java.util.Collection;
 
 /**
@@ -11,5 +14,4 @@ interface BusinessLogicalLayer {
     Collection<Texture> getAllTexture();
     void renderModel(Model3D model);
     void renderAllModels();
-
 }

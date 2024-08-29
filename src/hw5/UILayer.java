@@ -12,5 +12,4 @@ interface UILayer {
     void printAllTextures();
     void renderAll();
     void renderModel(int i);
-
 }

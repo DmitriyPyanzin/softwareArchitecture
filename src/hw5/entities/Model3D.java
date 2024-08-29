@@ -1,4 +1,4 @@
-package hw5;
+package hw5.entities;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,5 +25,4 @@ class Model3D implements Entity {
 
     @Override
     public String toString() {return String.format("3DModel #%s", id);}
-
 }
