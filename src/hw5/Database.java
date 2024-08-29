@@ -10,4 +10,5 @@ interface Database {
     void load();
     void save();
     Collection<Entity> getAll();
+
 }

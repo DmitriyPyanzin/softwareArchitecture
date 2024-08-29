@@ -9,6 +9,7 @@ import java.util.Random;
 class EditorBusinessLogicalLayer implements BusinessLogicalLayer{
 
     private final DatabaseAccess databaseAccess;
+    private final Random random = new Random();
 
     public EditorBusinessLogicalLayer(DatabaseAccess databaseAccess) {this.databaseAccess = databaseAccess;}
 
@@ -25,8 +26,6 @@ class EditorBusinessLogicalLayer implements BusinessLogicalLayer{
     public void renderAllModels() {
         for (Model3D model : getAllModels()) processRender(model);
     }
-
-    private final Random random = new Random();
 
     private void processRender(Model3D model) {
         try

@@ -6,5 +6,4 @@ package hw5;
 interface Entity {
 
     int getId();
-
 }

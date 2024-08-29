@@ -11,4 +11,5 @@ interface DatabaseAccess {
     void removeEntity(Entity entity);
     Collection<Texture> getAllTextures();
     Collection<Model3D> getAllModels();
+
 }

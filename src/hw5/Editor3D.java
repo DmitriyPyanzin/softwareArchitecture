@@ -104,4 +104,5 @@ class Editor3D implements UILayer{
         long endTime = System.currentTimeMillis() - startTime;
         System.out.printf("Операция выполнена за %d мс.\n", endTime);
     }
+
 }

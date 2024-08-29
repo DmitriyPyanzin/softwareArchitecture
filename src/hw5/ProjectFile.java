@@ -12,7 +12,6 @@ class ProjectFile {
 
     public ProjectFile(String fileName) {
         this.fileName = fileName;
-        //TODO: Загрузка настроек проекта из файла
 
         setting1 = 1;
         setting2 = "...";

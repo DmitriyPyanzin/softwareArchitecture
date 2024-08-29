@@ -17,14 +17,10 @@ class EditorDatabase implements Database{
     }
 
     @Override
-    public void load() {
-        //TODO: Загрузка сех сущностей проекта (модели, текстуры и т.д.)
-    }
+    public void load() {}
 
     @Override
-    public void save() {
-        //TODO: Сохранение текущего состояния всех сущностей проекта
-    }
+    public void save() {}
 
     private void generateModelAndTextures(){
         Model3D model3D = new Model3D();
