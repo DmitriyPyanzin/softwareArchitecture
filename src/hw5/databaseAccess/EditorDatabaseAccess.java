@@ -27,17 +27,6 @@ public class EditorDatabaseAccess implements DatabaseAccess {
     }
 
     @Override
-    public Collection<Texture> removeAllTextures() {
-        editorDatabase.entities;
-        return null;
-    }
-
-    @Override
-    public Collection<Model3D> removeAllModels() {
-        return null;
-    }
-
-    @Override
     public Collection<Texture> getAllTextures() {
         Collection<Texture> models = new ArrayList<>();
         for (Entity entity : editorDatabase.getAll()){

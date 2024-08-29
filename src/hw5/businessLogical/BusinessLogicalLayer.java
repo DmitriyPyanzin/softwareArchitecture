@@ -14,5 +14,5 @@ public interface BusinessLogicalLayer {
     Collection<Texture> getAllTexture();
     void renderModel(Model3D model);
     void renderAllModels();
-    Collection<Entity> removeAll();
+    Collection<Entity> removeAll();  //Добавил метод
 }

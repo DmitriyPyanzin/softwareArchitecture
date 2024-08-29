@@ -11,5 +11,5 @@ public interface Database {
     void load();
     void save();
     Collection<Entity> getAll();
-    Collection<Entity> deleteAll();
+    Collection<Entity> deleteAll();  // Добавил метод
 }
