@@ -46,4 +46,7 @@ public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public Collection<Entity> removeAll() {return databaseAccess.removeAllEntity();}
 }

@@ -47,4 +47,11 @@ public class EditorDatabase implements Database {
         }
         return entities;
     }
+
+    @Override
+    public Collection<Entity> deleteAll() {
+        if (entities.isEmpty()) throw new RuntimeException("Моделей и текстур нет");
+        getAll().removeAll(entities);
+        return entities;
+    }
 }

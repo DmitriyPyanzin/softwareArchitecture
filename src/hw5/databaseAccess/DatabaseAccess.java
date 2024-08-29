@@ -14,6 +14,5 @@ public interface DatabaseAccess {
     void removeEntity(Entity entity);
     Collection<Texture> getAllTextures();
     Collection<Model3D> getAllModels();
-    Collection<Texture> removeAllTextures();
-    Collection<Model3D> removeAllModels();
+    Collection<Entity> removeAllEntity();
 }
