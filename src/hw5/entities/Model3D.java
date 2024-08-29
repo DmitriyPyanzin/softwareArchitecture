@@ -6,7 +6,7 @@ import java.util.Collection;
 /**
  * 3D модель
  */
-class Model3D implements Entity {
+public class Model3D implements Entity {
 
     private static int counter = 10000;
     private final int id;

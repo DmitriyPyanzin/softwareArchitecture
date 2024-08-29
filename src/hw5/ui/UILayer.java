@@ -1,4 +1,4 @@
-package hw5;
+package hw5.ui;
 
 /**
  * Интерфейс UI

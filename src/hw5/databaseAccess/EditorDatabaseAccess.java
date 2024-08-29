@@ -1,16 +1,16 @@
-package hw5;
+package hw5.databaseAccess;
 
+import hw5.database.Database;
 import hw5.entities.Entity;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
-
 import java.util.ArrayList;
 import java.util.Collection;
 
 /**
  * Реализация DAC
  */
-class EditorDatabaseAccess implements DatabaseAccess {
+public class EditorDatabaseAccess implements DatabaseAccess {
 
     private final Database editorDatabase;
 

@@ -1,15 +1,15 @@
-package hw5;
+package hw5.businessLogical;
 
+import hw5.databaseAccess.DatabaseAccess;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
-
 import java.util.Collection;
 import java.util.Random;
 
 /**
  * Реализация Business Logical Layer
  */
-class EditorBusinessLogicalLayer implements BusinessLogicalLayer{
+public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
 
     private final DatabaseAccess databaseAccess;
     private final Random random = new Random();

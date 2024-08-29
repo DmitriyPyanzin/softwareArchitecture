@@ -3,7 +3,7 @@ package hw5.entities;
 /**
  * Сущность
  */
-interface Entity {
+public interface Entity {
 
     /**
      * @return ID сущности

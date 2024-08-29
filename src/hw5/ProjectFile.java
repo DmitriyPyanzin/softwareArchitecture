@@ -3,7 +3,7 @@ package hw5;
 /**
  * Файл проекта
  */
-class ProjectFile {
+public class ProjectFile {
 
     private final String fileName;
     private final int setting1;

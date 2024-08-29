@@ -1,5 +1,7 @@
 package hw5;
 
+import hw5.ui.Editor3D;
+
 import java.util.Scanner;
 
 class Program {

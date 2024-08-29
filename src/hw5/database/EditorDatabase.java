@@ -1,9 +1,9 @@
-package hw5;
+package hw5.database;
 
+import hw5.ProjectFile;
 import hw5.entities.Entity;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
@@ -11,7 +11,7 @@ import java.util.Random;
 /**
  * Database
  */
-class EditorDatabase implements Database{
+public class EditorDatabase implements Database {
 
     private final Random random = new Random();
     private Collection<Entity> entities;

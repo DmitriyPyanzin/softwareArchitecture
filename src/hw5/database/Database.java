@@ -1,13 +1,12 @@
-package hw5;
+package hw5.database;
 
 import hw5.entities.Entity;
-
 import java.util.Collection;
 
 /**
  * Интерфейс БД
  */
-interface Database {
+public interface Database {
 
     void load();
     void save();

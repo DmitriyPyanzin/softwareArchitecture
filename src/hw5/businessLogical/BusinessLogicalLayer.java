@@ -1,14 +1,13 @@
-package hw5;
+package hw5.businessLogical;
 
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
-
 import java.util.Collection;
 
 /**
  * Интерфейс BLL (Business Logical Layer)
  */
-interface BusinessLogicalLayer {
+public interface BusinessLogicalLayer {
 
     Collection<Model3D> getAllModels();
     Collection<Texture> getAllTexture();

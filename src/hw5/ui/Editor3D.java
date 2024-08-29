@@ -1,14 +1,20 @@
-package hw5;
+package hw5.ui;
 
+import hw5.ProjectFile;
+import hw5.database.Database;
+import hw5.database.EditorDatabase;
+import hw5.databaseAccess.DatabaseAccess;
+import hw5.databaseAccess.EditorDatabaseAccess;
+import hw5.businessLogical.BusinessLogicalLayer;
+import hw5.businessLogical.EditorBusinessLogicalLayer;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
-
 import java.util.ArrayList;
 
 /**
  * UI (User Interface)
  */
-class Editor3D implements UILayer{
+public class Editor3D implements UILayer {
 
     private ProjectFile projectFile;
     private BusinessLogicalLayer businessLogicalLayer;

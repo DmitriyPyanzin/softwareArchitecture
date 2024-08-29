@@ -3,7 +3,7 @@ package hw5.entities;
 /**
  * Текстура
  */
-class Texture implements Entity {
+public class Texture implements Entity {
 
     private static int counter = 50000;
     private final int id;
