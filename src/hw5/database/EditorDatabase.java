@@ -47,10 +47,4 @@ public class EditorDatabase implements Database {
         }
         return entities;
     }
-
-    @Override
-    public void delete() {}
-
-    @Override
-    public void deleteAll() {}
 }
