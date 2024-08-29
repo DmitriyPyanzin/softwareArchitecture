@@ -12,11 +12,10 @@ import java.util.Optional;
 public class ConcreteNoteEditor implements NoteEditor {
 
     private final NotesDatabaseContext dbContext;
-    private final NotesPresenter notesPresenter;
+    private final NotesPresenter notesPresenter = null;
 
-    public ConcreteNoteEditor(NotesDatabaseContext dbContext, NotesPresenter notesPresenter) {
+    public ConcreteNoteEditor(NotesDatabaseContext dbContext) {
         this.dbContext = dbContext;
-        this.notesPresenter = notesPresenter;
     }
 
     @Override
