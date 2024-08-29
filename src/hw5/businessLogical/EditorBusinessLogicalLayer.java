@@ -5,6 +5,7 @@ import hw5.entities.Entity;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
 import java.util.Collection;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -29,6 +30,11 @@ public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
     @Override
     public void renderAllModels() {
         for (Model3D model : getAllModels()) processRender(model);
+    }
+
+    @Override
+    public Collection<Entity> removeAllEntity() {
+        return null;
     }
 
     private void processRender(Model3D model) {
