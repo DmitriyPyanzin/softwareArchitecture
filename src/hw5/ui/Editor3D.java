@@ -7,6 +7,7 @@ import hw5.databaseAccess.DatabaseAccess;
 import hw5.databaseAccess.EditorDatabaseAccess;
 import hw5.businessLogical.BusinessLogicalLayer;
 import hw5.businessLogical.EditorBusinessLogicalLayer;
+import hw5.entities.Entity;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
 import java.util.ArrayList;
@@ -112,5 +113,15 @@ public class Editor3D implements UILayer {
         businessLogicalLayer.renderAllModels();
         long endTime = System.currentTimeMillis() - startTime;
         System.out.printf("Операция выполнена за %d мс.\n", endTime);
+    }
+
+    @Override
+    public void removeAllEntities() {
+
+        //Предусловия
+        checkProjectFile();
+
+        ArrayList<Entity> entities = (ArrayList<Entity>)businessLogicalLayer.removeAll();
+        if (entities.isEmpty()) throw new RuntimeException("Элементов нет");
     }
 }

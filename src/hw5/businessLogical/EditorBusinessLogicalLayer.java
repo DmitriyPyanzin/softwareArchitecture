@@ -1,6 +1,7 @@
 package hw5.businessLogical;
 
 import hw5.databaseAccess.DatabaseAccess;
+import hw5.entities.Entity;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
 import java.util.Collection;
@@ -39,4 +40,7 @@ public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public Collection<Entity> removeAll() {return databaseAccess.removeAllEntity();}
 }

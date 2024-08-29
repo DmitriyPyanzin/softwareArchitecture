@@ -32,8 +32,7 @@ class Program {
             System.out.println("5. Отобразить все текстуры проекта");
             System.out.println("6. Выполнить рендер всех проектов");
             System.out.println("7. Выполнить рендер модели");
-            System.out.println("8. Удалить модель проекта");
-            System.out.println("9. Удалить все модели проекта");
+            System.out.println("8. Удалить все элементы проекта");
             System.out.println("0. ЗАВЕРШЕНИЕ РАБОТЫ ПРИЛОЖЕНИЯ");
             System.out.print("Пожалуйста, выберете пункт меню: ");
 
@@ -76,6 +75,10 @@ class Program {
                                 scanner.nextLine();
                                 editor3D.renderModel(modelNo);
                             } else System.out.println("Номер модели указан некорректно.");
+                            break;
+                        case 8:
+                            editor3D.removeAllEntities();
+                            System.out.println("Все элементы удалены");
                             break;
                         default: System.out.println("Укажите корректный пункт меню");
                     }

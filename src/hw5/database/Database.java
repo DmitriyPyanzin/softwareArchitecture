@@ -11,6 +11,5 @@ public interface Database {
     void load();
     void save();
     Collection<Entity> getAll();
-    void delete();
-    void deleteAll();
+    Collection<Entity> deleteAll();
 }

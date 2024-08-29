@@ -1,5 +1,6 @@
 package hw5.businessLogical;
 
+import hw5.entities.Entity;
 import hw5.entities.Model3D;
 import hw5.entities.Texture;
 import java.util.Collection;
@@ -13,4 +14,5 @@ public interface BusinessLogicalLayer {
     Collection<Texture> getAllTexture();
     void renderModel(Model3D model);
     void renderAllModels();
+    Collection<Entity> removeAll();
 }
